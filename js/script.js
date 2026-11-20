@@ -25,10 +25,10 @@ const facultyProfiles = [
     "role": "Principal",
     "qualification": "Phd (Singapore), Phd (USA), Phd (IN), MPT, PGDMLE, PGDSTT, DOM (Belgium), ELP (ISB, Hyderabad), CKTP (USA)",
     "specialisation": "Musculoskeletal & Sports Physiotherapy, Women’s Health, Manual Therapy, Kinesio Taping",
-    "experience": "22 Year",
+    "experience": "18 Years",
     "metrics": [
-      { "label": "Publications (Present University)", "value": "60" },
-      { "label": "Overall Publications", "value": "03" }
+      { "label": "Publications (Present University)", "value": "03" },
+      { "label": "Overall Publications", "value": "60" }
     ],
     "achievement": "Appreciation Award by Government of India Appreciation Award by Government of Rajasthan Tedx Speaker",
     "research": "",
@@ -45,7 +45,7 @@ const facultyProfiles = [
     "role": "Assistant Professor/HOD",
     "qualification": "PhD",
     "specialisation": "Nutrition and Dietetics",
-    "experience": "6 Years",
+    "experience": "8 Years",
     "metrics": [
       { "label": "Publications (Present University)", "value": "19" },
       { "label": "Overall Publications", "value": "UGC-NET M.Sc. Silver Medalist 3+ Patents published" }
@@ -67,8 +67,8 @@ const facultyProfiles = [
     "specialisation": "Radiotherapy Technology",
     "experience": "2 Years, 5 Months",
     "metrics": [
-      { "label": "Publications (Present University)", "value": "13" },
-      { "label": "Overall Publications", "value": "10" }
+      { "label": "Publications (Present University)", "value": "10" },
+      { "label": "Overall Publications", "value": "13" }
     ],
     "achievement": "Acedemic Secratory ISRRT Rajasthan Chapter",
     "research": "13",
@@ -87,8 +87,8 @@ const facultyProfiles = [
     "specialisation": "Medical Radiology and Imaging Technology",
     "experience": "5 Years, 4 Months",
     "metrics": [
-      { "label": "Publications (Present University)", "value": "35" },
-      { "label": "Overall Publications", "value": "25" }
+      { "label": "Publications (Present University)", "value": "25" },
+      { "label": "Overall Publications", "value": "35" }
     ],
     "achievement": "",
     "research": "",
@@ -107,8 +107,8 @@ const facultyProfiles = [
     "specialisation": "Nutrition and Dietetics",
     "experience": "2 Years, 5 Months",
     "metrics": [
-      { "label": "Publications (Present University)", "value": "3" },
-      { "label": "Overall Publications", "value": "" }
+      { "label": "Publications (Present University)", "value": "2" },
+      { "label": "Overall Publications", "value": "3" }
     ],
     "achievement": "UGC NET 2024",
     "research": "3",
@@ -147,11 +147,11 @@ const facultyProfiles = [
     "specialisation": "Microbiology",
     "experience": "2 Years, 5 Months",
     "metrics": [
-      { "label": "Publications (Present University)", "value": "30" },
+      { "label": "Publications (Present University)", "value": "6" },
       { "label": "Overall Publications", "value": "30" }
     ],
     "achievement": "15 Conferences; 2 Patents; 9 Workshops; 9 FDPs; 40+ Scientific Reviewer activities, Advisory Board Member, International Conference session Chair; 2 FDPs Resource  Person/Keyote Speaker; Gold Medalist;",
-    "research": "30",
+    "research": "15",
     "joined": "",
     "appointment": "Permanent",
     "department": "Nims College of Allied and Healthcare Sciences",
@@ -188,10 +188,10 @@ const facultyProfiles = [
     "experience": "2 Years, 5 Months",
     "metrics": [
       { "label": "Publications (Present University)", "value": "3" },
-      { "label": "Overall Publications", "value": "2" }
+      { "label": "Overall Publications", "value": "3" }
     ],
     "achievement": "NOTTO Organ Transplant Cordinator",
-    "research": "2",
+    "research": "3",
     "joined": "",
     "appointment": "Permanent",
     "department": "Nims College of Allied and Healthcare Sciences",
@@ -208,7 +208,7 @@ const facultyProfiles = [
     "experience": "14 Years",
     "metrics": [
       { "label": "Publications (Present University)", "value": "70" },
-      { "label": "Overall Publications", "value": "2" }
+      { "label": "Overall Publications", "value": "70" }
     ],
     "achievement": "Supervision: 6 PhD Scholars, 8 M.Sc students; Scientific reviewer; NABL & ISO 15189 trained; 16 Conference, External Examiner since 2021; 7 Event organized; Guest Speaker; 3 FDPs",
     "research": "70",
@@ -228,10 +228,10 @@ const facultyProfiles = [
     "experience": "2.5 Years",
     "metrics": [
       { "label": "Publications (Present University)", "value": "4" },
-      { "label": "Overall Publications", "value": "" }
+      { "label": "Overall Publications", "value": "4" }
     ],
     "achievement": "American Heart Association (ACLS) Provider ,American Heart Association BLS (CPR & AED) Provider.",
-    "research": "",
+    "research": "4",
     "joined": "",
     "appointment": "Permanent",
     "department": "Nims College of Allied and Healthcare Sciences",
@@ -247,11 +247,11 @@ const facultyProfiles = [
     "specialisation": "Binocular Vision and Contact Lens",
     "experience": "1 Year",
     "metrics": [
-      { "label": "Publications (Present University)", "value": "3" },
-      { "label": "Overall Publications", "value": "" }
+      { "label": "Publications (Present University)", "value": "1" },
+      { "label": "Overall Publications", "value": "3" }
     ],
     "achievement": "4 FDPs + OCI Life Membership +Memento of Appreciation for Speaker in scientific conference SCOPE 3.0 + Certificate of Achievement on The Rudiments of Artificial Intelligence, ChatGPT, Deepseek, Grok and Metaverse",
-    "research": "3",
+    "research": "2",
     "joined": "",
     "appointment": "Permanent",
     "department": "Nims College of Allied and Healthcare Sciences",
@@ -268,10 +268,10 @@ const facultyProfiles = [
     "experience": "4.5 Years",
     "metrics": [
       { "label": "Publications (Present University)", "value": "1" },
-      { "label": "Overall Publications", "value": "1" }
+      { "label": "Overall Publications", "value": "2" }
     ],
     "achievement": "5+FDPs",
-    "research": "1",
+    "research": "2",
     "joined": "",
     "appointment": "Permanent",
     "department": "Nims College of Allied and Healthcare Sciences",
@@ -287,8 +287,8 @@ const facultyProfiles = [
     "specialisation": "Medical Radiology and Imaging Technology",
     "experience": "1.6 Year",
     "metrics": [
-      { "label": "Publications (Present University)", "value": "15" },
-      { "label": "Overall Publications", "value": "" }
+      { "label": "Publications (Present University)", "value": "3" },
+      { "label": "Overall Publications", "value": "15" }
     ],
     "achievement": "4 FDP, 2 Books , 1 Patent",
     "research": "15",
@@ -307,11 +307,11 @@ const facultyProfiles = [
     "specialisation": "OPTOMETRY",
     "experience": "14 Years",
     "metrics": [
-      { "label": "Publications (Present University)", "value": "2" },
-      { "label": "Overall Publications", "value": "" }
+      { "label": "Publications (Present University)", "value": "11" },
+      { "label": "Overall Publications", "value": "11" }
     ],
     "achievement": "",
-    "research": "3",
+    "research": "11",
     "joined": "",
     "appointment": "Permanent",
     "department": "Nims College of Allied and Healthcare Sciences",
@@ -328,7 +328,7 @@ const facultyProfiles = [
     "experience": "4 Years",
     "metrics": [
       { "label": "Publications (Present University)", "value": "18" },
-      { "label": "Overall Publications", "value": "" }
+      { "label": "Overall Publications", "value": "18" }
     ],
     "achievement": "10 FDP's with 9 publications 3 patents 2 books  Member of European society of Radiology Served as Guest Faculty and External Examiner across Different universities with 2 international conferences and 2 national conferences 15+ workshops and certificates",
     "research": "18",
@@ -348,7 +348,7 @@ const facultyProfiles = [
     "experience": "5.4 Years",
     "metrics": [
       { "label": "Publications (Present University)", "value": "35" },
-      { "label": "Overall Publications", "value": "" }
+      { "label": "Overall Publications", "value": "35" }
     ],
     "achievement": "",
     "research": "35",
@@ -3114,3 +3114,31 @@ const facultyProfiles = [
   initPlacementHighlights();
   initCountUpNumbers();
 })();
+
+
+
+
+
+
+  // Show the floating CTA between the site header and final admissions section.
+  function initStickyAdmissionsCTA() {
+    const cta = document.querySelector('.sticky-admissions-cta');
+    const banner = document.querySelector('#admissions-banner');
+    const header = document.querySelector('.site-header');
+    if (!cta || !banner) return;
+    let frame;
+    const update = () => {
+      frame = undefined;
+      const headerVisible = header && header.getBoundingClientRect().bottom > 0;
+      const hide = headerVisible || banner.getBoundingClientRect().top < window.innerHeight;
+      cta.hidden = hide;
+      document.body.classList.toggle('sticky-cta-hidden', hide);
+    };
+    const schedule = () => {
+      if (frame === undefined) frame = requestAnimationFrame(update);
+    };
+    window.addEventListener('scroll', schedule, {passive: true});
+    window.addEventListener('resize', schedule);
+    window.addEventListener('load', schedule);
+    update();
+  }
