@@ -4111,3 +4111,114 @@ section.hero .hero-backdrop{
 @media (prefers-reduced-motion:reduce){
   #facilities .life-image-gallery.is-expanded~.nims-campus-explore button{animation:none;opacity:1}
 }
+
+
+
+
+     /* ===== Achievement stat cards (screenshot style) ===== */
+.law-achievements-stats{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(16px,1.6vw,28px);
+}
+.law-achievements-stats .stat-card{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  min-width:0;
+  min-height:clamp(220px,19vw,340px);
+  padding:clamp(20px,2vw,34px);
+  border:1px solid #426b90;
+  border-radius:clamp(26px,2.6vw,44px);
+  background:#fff;
+}
+
+/* bada number / text */
+.law-achievements-stats .stat-big{
+  display:block;
+  margin:0 0 clamp(14px,1.6vw,26px);
+  color:#ce293c;
+  font-size:28px;
+  /* letter-spacing:.01em; */
+  white-space:nowrap;
+}
+/* .law-achievements-stats .stat-big--text{
+  font-size:clamp(56px,6.4vw,110px);
+} */
+
+/* heading + paragraph */
+.law-achievements-stats .stat-card h3{
+  margin:0 0 8px;
+  color:#282828;
+  font-size:18px;
+}
+.law-achievements-stats .stat-card p{
+  margin:0;
+  color:#666;
+  font:400 clamp(13px,1vw,17px)/1.5 "Plus Jakarta Sans",sans-serif;
+}
+
+/* ---- middle detail card ---- */
+.law-achievements-stats .stat-card--detail{
+  justify-content:flex-start;
+  align-items:stretch;
+}
+.law-achievements-stats .stat-count{
+  display:flex;
+  align-items:baseline;
+  gap:12px;
+}
+.law-achievements-stats .stat-count .stat-big{margin-bottom:0}
+.law-achievements-stats .stat-unit{
+  color:#b51e30;
+  font:700 clamp(14px,1.2vw,20px)/1.3 "Plus Jakarta Sans",sans-serif;
+}
+.law-achievements-stats .stat-divider{
+  height:1px;
+  margin:14px 0 14px;
+  background:#dcdcdc;
+}
+.law-achievements-stats .stat-amount{
+  display:block;
+  color:#996800;
+  font:400 clamp(30px,3vw,52px)/1.1 Anton,sans-serif;
+  white-space:nowrap;
+}
+.law-achievements-stats .stat-amount-label{
+  display:block;
+  margin:4px 0 14px;
+  color:#76520b;
+  font:700 clamp(12px,.95vw,15px)/1.4 "Plus Jakarta Sans",sans-serif;
+}
+.law-achievements-stats .stat-card--detail .stat-meta{
+  margin:0 0 2px;
+  color:#777;
+  font-size:clamp(12px,.95vw,15px);
+}
+
+/* ---- responsive ---- */
+@media(max-width:1100px){
+  .law-achievements-stats{gap:14px}
+  .law-achievements-stats .stat-card{min-height:240px;padding:20px}
+  .law-achievements-stats .stat-big{font-size:clamp(46px,6vw,70px)}
+  .law-achievements-stats .stat-big--text{font-size:clamp(46px,6.5vw,76px)}
+}
+@media(max-width:575px){
+  .law-achievements-stats{grid-template-columns:1fr;gap:14px}
+  .law-achievements-stats .stat-card{
+    min-height:0;
+    padding:24px 22px;
+    border-radius:26px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+  }
+  .law-achievements-stats .stat-card--detail{align-items:stretch}
+  .law-achievements-stats .stat-big{font-size:32px;margin-bottom:14px;white-space:normal}
+  .law-achievements-stats .stat-big--text{font-size:64px}
+  .law-achievements-stats .stat-card h3{font-size:19px}
+  .law-achievements-stats .stat-card p{font-size:14px}
+  .law-achievements-stats .stat-amount{font-size:40px}
+}
