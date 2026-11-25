@@ -221,7 +221,7 @@ button:hover{cursor:pointer}
 .content-width{width:90%;max-width:var(--page-width);margin-inline:auto}
 .section-space{padding-block:clamp(54px,5vw,80px)}
 h1,h2,h3,h4,p{margin-top:0}
-h2{font-family:Anton,sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,72px);line-height:1.22;margin-bottom:28px}
+h2{font-family:Anton,sans-serif;font-weight:400;font-size:54px;line-height:1.1;margin-bottom:10px}
 p{font-size:clamp(15px,1.125vw,18px);line-height:1.6}
 h2>span{background:var(--heading-gradient);background-clip:text;-webkit-background-clip:text;color:transparent}
 .warm-gradient{background:var(--warm);background-clip:text;-webkit-background-clip:text;color:transparent}
@@ -386,7 +386,7 @@ h2>span{background:var(--heading-gradient);background-clip:text;-webkit-backgrou
 .programme-heading-graduate{
   position:absolute;
   right:2%;
-  bottom:-13px;
+  bottom:-4px;
   z-index:1;
   width:min(35%,430px);
   height:100%;
@@ -478,6 +478,9 @@ footer hr{max-width:1560px;margin:25px auto;border-color:#333}
 footer strong{font-size:10px;color:#ddd}
 footer p{font-size:10px;margin:12px 0 28px}
 footer small{font-size:9px}
+.sticky-admissions-apply-icon {
+    display: none;
+}
 .back-to-top{position:fixed;bottom:20px;right:20px;border:1px solid #fff8;background:var(--red);color:white;width:44px;height:44px;border-radius:50%;font-size:24px;z-index:20;box-shadow:0 3px 12px #0002}
 @media (max-width:1199px) {
   .section-heading{margin-bottom:55px}
@@ -861,7 +864,7 @@ footer small{font-size:9px}
 .visit-caption-kicker{display:block;margin:0;color:#ffc833;font-size:clamp(13px,.9vw,15px);font-weight:500;letter-spacing:0;text-transform:none}
 .visit-caption-kicker strong{color:inherit;font-weight:800}
 .visit-caption-kicker .visit-caption-highlight{color:#fff;font-weight:inherit}
-.industry-visit-gallery>.gallery-controls{position:absolute;bottom:18px;right:18px;margin:0;gap:8px}
+.industry-visit-gallery>.gallery-controls{position:absolute;bottom:18px;right:18px;margin:0;gap:8px;display: none;}
 .industry-visit-gallery .gallery-position{color:white}
 .industry-visit-gallery .gallery-controls button{background:#fffc}
 @media (hover:hover) and (pointer:fine) {
@@ -1024,7 +1027,7 @@ a.scholarship-next-option:focus-visible{outline:3px solid #053555;outline-offset
 .scholarship-next-arrow{position:absolute;z-index:1;top:28%;left:38%;width:13%;color:#d00000}
 .scholarship-next-art{position:absolute;z-index:0;inset:0 1% 0 auto;width:50%}
 .scholarship-next-campus{position:absolute;top:0;right:0;width:100%;height:100%;object-fit:contain}
-.scholarship-next-student{position:absolute;bottom:-2%;left:20%;width:61%;height:91%;object-fit:contain;object-position:center bottom;filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 -3px 0 #fff)}
+.scholarship-next-student{position:absolute;bottom:-2%;left:34%;width:61%;height:91%;object-fit:contain;object-position:center bottom;filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 -3px 0 #fff)}
 @media (min-width:768px) and (max-width:1023px){
   .scholarship-next-inner{min-height:470px;padding:48px 4%}
   .scholarship-next-copy{width:49%}
@@ -1087,13 +1090,11 @@ a.scholarship-next-option:focus-visible{outline:3px solid #053555;outline-offset
   .site-footer-address svg{margin-top:3px}
 }
 
-.admissions-banner{position:relative;isolation:isolate;
-  /* max-width:1600px; */
-  margin-inline:auto;overflow:hidden;background:#ff2227;color:#fff}
+.admissions-banner{position:relative;isolation:isolate;max-width:1600px;margin-inline:auto;overflow:hidden;background:#ff2227;color:#fff}
 .admissions-banner-scene{position:relative;height:clamp(400px,56.5vw,904px);background:#71b4ed}
 .admissions-banner-campus{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .admissions-banner h2{position:absolute;z-index:1;top:29%;left:0;width:100%;margin:0;padding-inline:16px;color:#FFC833;-webkit-text-stroke:clamp(1.5px,.16vw,2.5px) #fff;font:400 clamp(56px,11.1vw,178px)/1.1 Anton,sans-serif;text-align:center;text-transform:none;white-space:nowrap}
-.admissions-banner-graduate{position:absolute;z-index:2;left:49%;bottom:-6.4%;width:auto;max-width:none;height:70%;transform:translateX(-50%);pointer-events:none}
+.admissions-banner-graduate{position:absolute;z-index:2;left:49%;bottom:0%;width:auto;max-width:none;height:60%;transform:translateX(-50%);pointer-events:none}
 .admissions-banner-actions{position:relative;min-height:254px;padding:64px 24px 40px;text-align:center}
 .admissions-banner-actions h3{margin:0 0 24px;color:#fff;font:400 clamp(28px,3.6vw,58px)/1.2 Anton,sans-serif;text-transform:none}
 .admissions-banner-apply{display:inline-flex;justify-content:center;align-items:center;min-width:200px;min-height:54px;padding:12px 28px;border-radius:100px;background:#fff;color:#e60008;font-size:18px;font-weight:700;text-transform:none}
@@ -1162,7 +1163,7 @@ a.scholarship-next-option:focus-visible{outline:3px solid #053555;outline-offset
 #facilities .gallery-image{position:absolute!important;left:50%;top:28px!important;height:560px!important;border:0;border-radius:24px;background:#321721;box-shadow:0 14px 32px #260a1718;transform-origin:center;overflow:hidden;transition:opacity .35s;will-change:transform,width,opacity;cursor:pointer}
 #facilities .gallery-image::after{content:"";position:absolute;inset:0;z-index:3;border:3px solid var(--red);border-radius:inherit;box-shadow:inset 0 0 0 1px #ffffff70;opacity:0;pointer-events:none;transition:opacity .2s ease}
 #facilities .gallery-image:is(:hover,:focus-visible)::after{opacity:1}
-#facilities .gallery-image img{display:block;width:100%;height:100%;object-position:center center}
+#facilities .gallery-image img{display:block;width:100%;height:100%;object-position:center 0% !important;}
 #facilities .gallery-image img,#facilities .gallery-image>span{pointer-events:none;-webkit-user-drag:none}
 #facilities .gallery-image-content{position:relative;z-index:1;object-fit:cover!important}
 #facilities .gallery-image-backdrop{position:absolute;z-index:0;inset:-10%;width:120%!important;height:120%!important;object-fit:cover!important;filter:blur(24px) brightness(.62) saturate(.85);opacity:.78;pointer-events:none}
@@ -1179,7 +1180,36 @@ a.scholarship-next-option:focus-visible{outline:3px solid #053555;outline-offset
 #facilities .gallery-image--placeholder .gallery-image-content,#facilities .gallery-image--placeholder.is-open .gallery-image-content{object-fit:contain!important}
 #facilities .gallery-image--mall .gallery-image-content,#facilities .gallery-image--mall.is-open .gallery-image-content{object-position:center top}
 #facilities .gallery-image.is-open>span{font:700 clamp(24px,2.8vw,40px)/1.2 var(--font-display);padding:100px 34px 30px}
-#facilities .life-image-gallery.is-expanded.has-full-photo{height:calc(var(--campus-photo-height) + 90px)!important}
+/* #facilities .life-image-gallery.is-expanded.has-full-photo{height:calc(var(--campus-photo-height) + 90px)!important} */
+#facilities .life-image-gallery.is-expanded,
+#facilities .life-image-gallery.is-expanded.has-full-photo{
+  height:588px !important;            /* 28px top + 560px card */
+}
+#facilities .life-image-gallery.is-expanded .gallery-image.is-open,
+#facilities .gallery-image--full-photo.is-open{
+  height:560px !important;            /* fixed height, aspect ratio se nahi badlegi */
+}
+
+/* 2. Image poori card ko cover kare (letterbox/white gap nahi) */
+#facilities .gallery-image.is-open .gallery-image-content,
+#facilities .gallery-image--full-photo.is-open .gallery-image-content{
+  object-fit:cover !important;
+  object-position:center center !important;
+}
+
+/* 3. Expanded hone par curved white edges (:before/:after) hatao */
+#facilities .life-image-gallery.is-expanded:before,
+#facilities .life-image-gallery.is-expanded:after{
+  display:none !important;
+}
+
+/* 4. Section ke neeche extra space na bache */
+#facilities.life{padding-bottom:12px}
+#facilities .life-curved-slider-wrap{overflow:hidden}
+
+
+
+
 #facilities .gallery-image--full-photo.is-open{height:var(--campus-photo-height)!important}
 #facilities .gallery-image--full-photo.is-open .gallery-image-content{object-fit:contain!important;object-position:center}
 #facilities .gallery-image--original-photo .gallery-image-backdrop{display:none}
@@ -1522,7 +1552,7 @@ dialog.mentor-dialog{width:min(1360px,calc(100vw - 40px));font-family:var(--bs-b
  .law-exposure-experiences li{padding:9px;font-size:11px}
 }
 .career-profiles-title>span{display:block}
-.career-profiles-controls{display:flex;gap:clamp(14px,2vw,26px);padding-bottom:2px}
+.career-profiles-controls{display:flex;gap:clamp(14px,2vw,26px);padding-bottom:2px;display: none;}
 .career-profiles-controls button{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:#111;color:#fff;box-shadow:0 3px 12px #00000012}
 .career-profiles-controls button:hover{background:#b41027}
 .career-profiles-controls svg{width:20px;height:20px}
@@ -2259,9 +2289,7 @@ body.sticky-cta-hidden .back-to-top{bottom:20px}
 .hero .hero-benefits img{width:36px;height:36px;object-fit:contain}
 .hero .hero-benefits>div:first-child img{padding:2px;border-radius:50%;/* background:#fff */}
 .hero .hero-benefits strong{font-size:clamp(9px,.77vw,12px);font-weight:700;line-height:1.4;margin:0 0 4px}
-.hero .hero-benefits span{
-  /* font-size:clamp(8px,.65vw,10px); */
-  line-height:1.5;font-weight:400}
+.hero .hero-benefits span{/* font-size:clamp(8px,.65vw,10px); */line-height:1.5;font-weight:400}
 .hero .application-panel{width:29.5%;max-width:440px;padding:24px 16px 38px}
 .hero .application-title{margin-bottom:42px}
 .hero .application-title p{text-transform:uppercase;font-size:12px}
@@ -2410,7 +2438,7 @@ dialog.mentor-profile-dialog.is-leadership-profile{border-color:#800020;backgrou
 .law-alumni-placements .law-placement-card .placement-copy h3{grid-row:1;width:62%;min-height:0;margin:0;color:#fff;font-size:clamp(24px,7cqw,34px);font-weight:800;line-height:1.08;letter-spacing:-.04em;overflow-wrap:break-word}
 .law-alumni-placements .law-placement-card .placement-copy h3 span{font-weight:650}
 .law-alumni-placements .law-placement-card .placement-copy hr{grid-row:2;width:12cqw;margin:4cqw 0;border:0;border-top:3px solid #ffbd66;opacity:1}
-.law-alumni-placements .law-placement-card .law-placement-role{grid-row:3;width:59%;margin:0;color:#ffe1ad;font-size:clamp(20px,5.8cqw,28px);font-weight:700;line-height:1.25;letter-spacing:-.025em}
+.law-alumni-placements .law-placement-card .law-placement-role{grid-row:3;width:59%;margin:0;color:#ffe1ad;font-size:16px;font-weight:700;line-height:1.25;letter-spacing:-.025em}
 .law-alumni-placements .law-placement-card .law-placement-organisation{grid-row:7;width:51%;min-width:0;margin:0;color:#ffe1ad;font-size:clamp(13px,3.8cqw,18px);font-weight:750;line-height:1.4;letter-spacing:0;overflow-wrap:break-word}
 .law-alumni-placements .law-placement-badge{display:flex;flex:none;align-items:center;justify-content:center;width:24cqw;height:24cqw;min-height:0;margin:0;padding:1.5cqw;border:1px solid #eadfe1;border-radius:3cqw;background:#fff}
 .law-alumni-placements .law-placement-badge img{display:block;width:100%;height:100%;object-fit:contain}
@@ -2455,7 +2483,7 @@ dialog.mentor-profile-dialog.is-leadership-profile{border-color:#800020;backgrou
 #rankings .university-award-row--cegr-law .university-award-list{grid-template-columns:repeat(3,minmax(0,1fr))}
 #rankings .law-outlook-card{display:flex;flex-direction:column;justify-content:center;min-width:0;min-height:170px;padding:22px 24px;border:1px solid #d8d8d8;border-radius:22px;background:#fff;color:#282828}
 #rankings .law-outlook-brand{display:flex;justify-content:center;align-items:center;margin-bottom:18px}
-#rankings .law-outlook-brand img{display:block;width: 500px;;height:auto}
+#rankings .law-outlook-brand img{display:block;width:500px;height:auto}
 #rankings .law-outlook-award{display:grid;grid-template-columns:clamp(56px,4.4vw,80px) minmax(0,1fr);align-items:center;gap:10px}
 #rankings .law-outlook-award .award-title-trophy{display:block;width:100%;height:clamp(76px,6vw,108px);object-fit:contain}
 #rankings .law-outlook-award h3{margin:0 0 5px;color:#c92534;font:700 clamp(13px,.95vw,18px)/1.4 var(--bs-body-font-family)}
@@ -2631,7 +2659,7 @@ dialog.law-event-dialog{width:min(1140px,calc(100vw - 40px));max-width:none;max-
 .law-achievements-heading>p{max-width:1040px;margin:0;color:#383838;font:400 clamp(16px,1.15vw,21px)/1.65 "Plus Jakarta Sans",sans-serif}
 .law-achievements-stats{grid-area:stats;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,1.5vw,28px);position:relative;z-index:2}
 .law-achievements-stats article{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-width:0;min-height:clamp(190px,16.5vw,275px);padding:clamp(18px,1.4vw,27px);border:1px solid #426b90;border-radius:clamp(22px,2vw,34px);background:#fff}
-.law-achievements-stats article>strong{display:block;margin-bottom:20px;color:#ce293c;font:400 clamp(40px,4.2vw,78px)/1.05 Anton,sans-serif;letter-spacing:-.02em;white-space:nowrap}
+.law-achievements-stats article>strong{display:block;margin-bottom:20px;color:#ce293c;font:400 clamp(40px,2.2vw,78px)/1.05 Anton,sans-serif;letter-spacing:-.02em;white-space:nowrap}
 .law-achievements-stats article:nth-child(2)>strong{font-size:clamp(30px,3.8vw,68px)}
 .law-achievements-stats h3{margin:0 0 8px;color:#292929;font:700 clamp(14px,1.1vw,20px)/1.35 "Plus Jakarta Sans",sans-serif}
 .law-achievements-stats p{margin:0;color:#666;font:400 clamp(11px,.85vw,15px)/1.5 "Plus Jakarta Sans",sans-serif}
@@ -2766,7 +2794,7 @@ dialog.law-event-dialog{width:min(1140px,calc(100vw - 40px));max-width:none;max-
 
 /* Hero composition matching the supplied School of Law reference. */
 .hero{height:clamp(620px,44vw,720px);min-height:620px;padding:0;isolation:isolate}
-.hero-backdrop{inset:0;background-image:url("../images/alied.webp");background-position:center;background-size:cover;filter:none}
+.hero-backdrop{inset:0;background-image:url("../images/banner.webp");background-position:center;background-size:cover;filter:none}
 .hero:after{background:linear-gradient(90deg,#090300d9 0%,#100500b8 31%,#1608004d 59%,#10050052 100%)}
 .hero-inner{display:flex;width:90%;max-width:1600px;height:100%;margin-inline:auto;align-items:center;justify-content:space-between;gap:24px}
 .hero-copy{position:relative;z-index:3;width:35%;min-height:0;padding:0}
@@ -2782,7 +2810,7 @@ dialog.law-event-dialog{width:min(1140px,calc(100vw - 40px));max-width:none;max-
 .hero .hero-benefits img{width:34px;height:34px;flex:none;object-fit:contain}
 .hero .hero-benefits>div:first-child img{padding:3px;border-radius:50%;/* background:#fff */}
 .hero .hero-benefits strong{margin:0;color:#fff;font-size:clamp(11px,.9vw,13px);font-weight:700;line-height:1.4}
-.hero .hero-benefits span{/* color:#fff;font-size:clamp(8px,.66vw,10px); */font-weight:400;line-height:1.45}
+.hero .hero-benefits span{color:#fff;/* font-size:clamp(8px,.66vw,10px); */font-weight:400;line-height:1.45}
 .hero .hero-student{position:absolute;z-index:2;left:36%;bottom:-1%;width:auto;height:86%;max-width:none;max-height:none;object-fit:contain;object-position:center bottom;pointer-events:none}
 .hero .application-panel{position:relative;z-index:5;width:28.5%;max-width:420px;margin-left:auto;padding:20px 14px 28px;border-radius:18px}
 .hero .application-title{margin-bottom:34px}
@@ -2852,7 +2880,7 @@ dialog.law-event-dialog{width:min(1140px,calc(100vw - 40px));max-width:none;max-
 .law-activity-slide:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#000e);pointer-events:none}
 .law-activity-slide figcaption{position:absolute;z-index:1;bottom:26px;left:26px;right:192px;margin:0;color:#ffc833;font:600 clamp(13px,.95vw,16px)/1.6 "Plus Jakarta Sans",sans-serif;text-shadow:0 2px 8px #000}
 .law-activity-slide figcaption strong{color:#fff;font-weight:800}
-.law-activity-controls{position:absolute;z-index:2;right:20px;bottom:22px;display:flex;align-items:center;gap:10px}
+.law-activity-controls{position:absolute;z-index:2;right:20px;bottom:22px;display:flex;align-items:center;gap:10px;display: none;}
 .law-activity-controls button{display:grid;place-items:center;flex:none;width:46px;height:46px;padding:0;border:0;border-radius:50%;background:#ffffffe0;color:#b41027;font:400 28px/1 Arial,sans-serif;cursor:pointer;transition:background .2s,color .2s}
 .law-activity-controls button:hover{background:#fff;color:#780c1b}
 .law-activity-controls .gallery-position{min-width:45px;text-align:center;color:#fff;font:800 13px/1 "Plus Jakarta Sans",sans-serif}
@@ -3656,10 +3684,6 @@ button[aria-label*="next" i]:disabled{
 }
 
 
-.sticky-admissions-apply-icon {
-    display: none;
-}
-
 @media(max-width:700px){
  :root{--sticky-cta-height:48px}
  html{scroll-padding-top:0}
@@ -3714,7 +3738,6 @@ button[aria-label*="next" i]:disabled{
  }
  .sticky-admissions-apply:hover,.sticky-admissions-call:hover{background:#bd1320;color:#fff;text-decoration:none}
  .sticky-admissions-apply-icon{display:block;width:17px;height:17px;flex:none;fill:currentColor}
- 
  .sticky-admissions-apply>span{display:none!important}
  .sticky-admissions-call{
   display:flex;
@@ -3740,17 +3763,23 @@ button[aria-label*="next" i]:disabled{
 }
 
 
-
-
 /* hero section css */
 
 .hero{height:clamp(700px,50vw,820px);position:relative;isolation:isolate;color:white;overflow:hidden}
-.hero-backdrop{position:absolute;inset:-5px;z-index:-2;background:url("../images/alied.webp") center/cover;filter:blur(2.5px)}
+/* .hero-backdrop{position:absolute;inset:-5px;z-index:-2;background:url("../images/nursing-banner-img.webp") center/cover;filter:blur(2.5px)} */
+section.hero .hero-backdrop{
+  inset:0;
+  filter:none;
+  background-image:url("../images/alied.webp");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.48) 34%,rgba(0,0,0,.1) 68%,rgba(0,0,0,.12));z-index:-1}
 .hero-inner{height:100%;position:relative;max-width:1600px;margin:auto;width:92.5%;display:flex;align-items:center;justify-content:space-between}
 .hero-copy{width:41%;padding-bottom:8px;position:relative;z-index:2}
 .school-name{font-size:clamp(28px,2.5vw,40px);line-height:1.25;border-left:2px solid #ee0014;padding-left:7px;font-weight:700;margin-bottom:12px}
-.hero h1{font:600 clamp(48px,12.5vw,50px)/1.15 Anton,sans-serif;margin:0 0 10px;background:linear-gradient(105deg,#ffcf30,#ff182b);color:transparent;background-clip:text;-webkit-background-clip:text;width:max-content;line-height: 1.2 !important;}
+.hero h1{font-size:70px;margin:0 0 10px;background:linear-gradient(105deg,#ffcf30,#ff182b);color:transparent;background-clip:text;-webkit-background-clip:text;width:max-content;line-height: 1.1 !important;}
 .admissions-kicker{display:none;max-width:470px;margin:0 0 12px;color:#fff;font-size:clamp(12px,1vw,15px);font-weight:700;line-height:1.45;letter-spacing:.02em;text-shadow:0 1px 3px #0008}
 .admissions-ribbon{background:#d6000b;color:white;min-height:44px;padding:10px 20px;font-weight:800;font-size:clamp(14px,1.2vw,18px);line-height:1.4;letter-spacing:0;display:inline-flex;gap:18px;align-items:center}
 .admissions-ribbon:hover{background:#bd0006}
@@ -3992,11 +4021,93 @@ button[aria-label*="next" i]:disabled{
  .hero .application-panel .row{--bs-gutter-x:12px;--bs-gutter-y:11px}
  .hero .application-panel .form-control,.hero .application-panel .form-select{min-height:36px;padding-block:10px}
  .hero .consent{margin:21px 10px 18px}
+ .hero .hero-copy{position:static}
+  .hero .hero-inner{position:relative}
+  .hero .hero-benefits{
+    position:absolute;
+    left:0;
+    bottom:28px;
+    margin:0;
+    width:620px;
+    max-width:48%;
+    z-index:4;
+  }
+  section.hero .hero-inner .hero-copy{
+    align-self:flex-start;
+    padding-top:clamp(32px,4vw,64px);
+  }
+
+#facilities .life-curved-slider-wrap .life-image-gallery.is-expanded{
+    height:calc(var(--campus-photo-height, 560px) + 56px) !important;
+    transition:height .55s cubic-bezier(.22,.75,.2,1);
+  }
+  /* card ki height = image ki height */
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded .gallery-image.is-open{
+    height:var(--campus-photo-height, 560px) !important;
+    top:28px !important;
+    background:#1d0c13;
+  }
+  /* image poori dikhe, crop nahi */
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded .gallery-image.is-open .gallery-image-content{
+    object-fit:contain !important;
+    object-position:center center !important;
+  }
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded .gallery-image.is-open .gallery-image-backdrop{
+    display:block !important;
+  }
+  /* caption hamesha image ke upar */
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded .gallery-image.is-open > span{
+    z-index:5 !important;
+    padding:70px 34px 26px !important;
+    font-size:clamp(20px,2.2vw,32px) !important;
+  }
+  /* curved white edges hatao */
+  #facilities .life-image-gallery.is-expanded:before,
+  #facilities .life-image-gallery.is-expanded:after{display:none !important}
+
+  /* arrows image ke left/right beech me */
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded ~ .nims-campus-explore{
+    position:absolute !important;
+    z-index:50;
+    left:0; right:0;
+    top:28px !important;
+    height:var(--campus-photo-height, 560px) !important;
+    margin:0 !important;
+    padding:0 46px !important;
+    gap:0 !important;
+    justify-content:space-between !important;
+    align-items:center !important;
+    pointer-events:none;
+  }
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded ~ .nims-campus-explore button{
+    pointer-events:auto;
+    opacity:1 !important;
+    background:#ffffffeb !important;
+    box-shadow:0 8px 22px #260a1745 !important;
+  }
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded ~ .nims-campus-explore button:hover{
+    background:#760018 !important;
+    color:#fff !important;
+  }
+
 }
+#facilities.life{padding-bottom:12px}
+#facilities .life-curved-slider-wrap{position:relative;overflow:hidden}
 @media(min-width:768px) and (max-width:1199px){
  .hero{height:680px;min-height:680px}
  .hero-inner{width:94%;gap:18px}
  .hero-copy{width:41%;transform:none}
  .hero .hero-rotator,.hero .hero-student{left:34%;height:77%}
  .hero .application-panel{width:36%;padding:20px 14px 24px}
+  #facilities .life-image-gallery.is-expanded~.nims-campus-explore{height:520px;padding-inline:40px}
+  #facilities .life-image-gallery.is-expanded:has(.gallery-image--full-photo.is-open)~.nims-campus-explore{height:auto}
+
+   #facilities .life-image-gallery.is-expanded,
+  #facilities .life-image-gallery.is-expanded.has-full-photo{height:548px !important}
+  #facilities .life-image-gallery.is-expanded .gallery-image.is-open{height:520px !important}
+  #facilities .life-image-gallery.is-expanded ~ .nims-campus-explore{height:520px;padding-inline:40px}
+}
+@keyframes campus-arrow-in{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  #facilities .life-image-gallery.is-expanded~.nims-campus-explore button{animation:none;opacity:1}
 }
